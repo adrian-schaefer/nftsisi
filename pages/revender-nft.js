@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useEffect, useState } from 'react'
@@ -56,7 +58,7 @@ export default function RevenderNft() {
         />
         {
           image && (
-            <image className="rounded mt-4" width="350" src={image} />
+            <img className="rounded mt-4" width="350" src={image} />
           )
         }
         <button onClick={tramitarReventa} className="font-bold mt-4 bg-green-500 text-white rounded p-4 shadow-lg">Revender</button>
