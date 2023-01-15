@@ -7,8 +7,8 @@ import { create as ipfsHttpClient } from 'ipfs-http-client'
 import { useRouter } from 'next/router'
 import Web3Modal from 'web3modal'
 
-const idProyectoIPFS = "2KMS2HWONYUbbp7bo1s48gRaovJ"
-const claveSecretaIPFS = "381f1dd11b79df0ab5fdcbca580d3516"
+const idProyectoIPFS = process.env.NEXT_PUBLIC_ID_PROYECTO_IPFS
+const claveSecretaIPFS = process.env.NEXT_PUBLIC_CLAVE_PRIVADA_IPFS
 const authorization = "Basic " + btoa(idProyectoIPFS + ":" + claveSecretaIPFS)
 
 const clienteIPFS = ipfsHttpClient({
